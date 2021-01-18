@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="13"
+        android:padding="12sp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="179dp"
+            android:layout_height="131dp"
+            app:srcCompat="@drawable/spmlogo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="303dp"
+            android:layout_height="202dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+
+            android:foregroundGravity="center_vertical|center"
+            android:gravity="center"
+            android:text="Welcome\nTo SPM"
+            android:textColor="@color/colorPrimary"
+            android:textSize="190px"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+    <LinearLayout
+        android:id="@+id/email_password_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_password_fields"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+        android:id="@+id/buttonAddParcel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToAddParcelActivity"
+        android:text="Add Parcel" />
+
+    <Button
+        android:id="@+id/buttonParcelHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToHistoryParcelActivity"
+        android:text="History Of Parcels"
+         />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
